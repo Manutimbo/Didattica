@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impaginazione Flex</title>
+<style>
+* { 
+   box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+}
+body { 
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgb(248, 246, 246);
+}
+h1 { 
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Bigcontainer { 
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;  
+                padding: 20px;             
+}
+.container { 
+            flex: 1 1 calc( 50% - 40px );
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            background: whitesmoke;  
+                
+}
+.container-img {
+                width: 50px;
+                height: 100px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                object-fit: cover;
+} 
+.Bigbutton { 
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+}
+.button {
+         border: none;
+         border-radius: 20px;
+         cursor: pointer;
+         font-size: 20px;
+         padding: 10px 20px;
+}
+.button-1 { 
+           background-color: white;
+           color: black;
+           border-radius: 8px;
+           border: solid white;
+           text-decoration: transparent;
+ }
+.button-2 {
+           background-color: blue;
+           color: white;
+           border-radius: 8px;
+           border: solid blue;
+           text-decoration: transparent;
+}
+.title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+}
+.sottotittle {
+              font-size: 15px;
+              margin-bottom: 10px;
+              color: grey;
+}
+</style>
+</head>
+<body>
+  <h1>Svendita Totale</h1>
+  <div class="Bigcontainer">
+    <div class="container">
+        <img src="https://m.media-amazon.com/images/I/71TnHjGPODL._AC_SL1500_.jpg">
+        <div class="title">Doppio Schermo Multiuso</div>
+        <div class="sottotittle">Potente,utile e multifunzionale</div>
+           <div class="Bigbutton">
+           <a href="https://www.amazon.it/FullHD-Doppio-Monitor-Portatile-Schermo/dp/B0D5BDKW5D/ref=sr_1_14?crid=1OCOIO7LI73E9&dib=eyJ2IjoiMSJ9.HF_olw1fTjHWc7qcCmjaE4Gg7YdnVoB-bvrm-sXp_KMSDGOSP0Q4Rf4Gtz0QVgpAcqUTRMu2M1M6lEgxyJTdH5SiKp_i9NBR0PNSwoFO7MZRuxKGwEdqCIkl_G5ZEgZ-F7hSjl9QrzGlRJVNUHqKSiOIRPwCaCL1p9USFByZKoDthqUd6BAUQq4oT-aWCcN5jqh2DsOYosLIpUhuwtxkWApcLvfxTalJwMsq6Sxj6z-rcSJWkREN_UBXQjwlq0fdTBfTKj1MdktftKnHtHz4bCWzvuwdVUnAYGYxCWlR4FY.alJjm8-iM3nV9uK2QiDNnoy6hXiEsoDHGDJDdDVs_-U&dib_tag=se&keywords=doppio+schermo+pc+portatile&qid=1755983353&sprefix=doppio+schermo%2Caps%2C131&sr=8-14" target="_blank" class="button button-1">Scopri di più</a>
+           <a href="https://www.amazon.it/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fcheckout%2Fentry%2Fbuynow%3FclientName%3DOffersX_OfferDisplay_DetailPage%26ASIN%3DB0D5BDKW5D%26storeID%3D%26qid%3D1755983353%26anti-csrftoken-a2z%3DhICCoh2hzU2qDC3ncoykMcTAGbAseAu5Isdc7BtXcVxqAAAAAGiqLjY3ZDJiMzdmYy1kZjAzLTQ2ZmQtOTE4My0wOWJmNzFiMDU2ZGE%253D%26sellingCustomerID%3D%26sourceCustomerOrgListID%3D%26dropdown-selection-ubb%3Dadd-new%26viewID%3Dglance%26ctaDeviceType%3Ddesktop%26isAddon%3D0%26ref_%3Ddp_start-bbf_1_glance_chw%26dropdown-selection%3Dadd-new%26nodeID%3D%26items%255B0.base%255D%255Bquantity%255D%3D1%26sr%3D8-14%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BdisplayString%255D%3D197%252C99%2526nbsp%253B%2526euro%253B%26tagActionCode%3D%26usePrimeHandler%3D0%26ctaPageType%3Ddetail%26quantity%3D1%26smokeTestEnabled%3Dfalse%26rsid%3D258-2891882-3573562%26isBuyNow%3D1%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255Bamount%255D%3D197.99%26pageLoadTimestampUTC%3D2025-08-23T21%253A10%253A14.584941083Z%26isEligibilityLogicDisabled%3D1%26items%255B0.base%255D%255Basin%255D%3DB0D5BDKW5D%26referrer%3Ddetail%26isMerchantExclusive%3D0%26merchantID%3DAEMYRLT0ZT4KT%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BcurrencyCode%255D%3DEUR%26items%255B0.base%255D%255BofferListingId%255D%3DaubMtBOx%25252F8ovmxe9d9ypUsM2kTBszWD85rO%25252F5pUdYtk3tFXsfDfddDuWnHpCse5ORc1%25252FU82HtuFAPe3vSmdrMAOnJKwQu4OwxZvFcgGSCUq81MYt9iU%25252BuA99dFo1CQQ2h8RgzDZF%25252BHd0Acz7nnAsFtDi5afyDDcGQZJPUfS3MqgldIBSeQSwqpLrvYmDkvqw%26sourceCustomerOrgListItemID%3D%26submit.buy-now%3DInvia%26pipelineType%3DChewbacca%26rebateId%3D%26offerListingID%3DaubMtBOx%25252F8ovmxe9d9ypUsM2kTBszWD85rO%25252F5pUdYtk3tFXsfDfddDuWnHpCse5ORc1%25252FU82HtuFAPe3vSmdrMAOnJKwQu4OwxZvFcgGSCUq81MYt9iU%25252BuA99dFo1CQQ2h8RgzDZF%25252BHd0Acz7nnAsFtDi5afyDDcGQZJPUfS3MqgldIBSeQSwqpLrvYmDkvqw%26session-id%3D258-2891882-3573562%26wlPopCommand%3D%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_it&openid.mode=checkid_setup&language=it_IT&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank" class="button button-2">Compra</a>
+           </div>
+    </div>
+    <div class="container">
+        <img src="https://m.media-amazon.com/images/I/71GPcnjRt7L._AC_SL1500_.jpg">
+        <div class="title">Ultra smart tv</div>
+        <div class="sottotittle">Vista e suono immersivo</div>
+         <div class="Bigbutton">
+          <a href="https://www.amazon.it/Hisense-Ready-32E43NT-DVB-T2-lativ%C3%B9/dp/B0CZXPGPFV/ref=sr_1_6?crid=224OS7EC8RZHM&dib=eyJ2IjoiMSJ9.M-HMp8Dwjwff5SdoT-KoSRGEKHB3F52udXP6Rrt3JAfVp7m1BNyUM7ojSYKPM504EImHWALIElvTbolBf2u-qnzHaI8hCaeZAA6nlElVJe95_379gYnMdDgn5XbSqg6-1zH1Pe8WucsjKEz1cLrO8SEIM6Bt1rmuOdsOayab2ROVpMAHayREiPZXsX9IuzybNI7GHxEmVcJr2PghUDQ_m0hGJd50Snc_loB9JOoOhfuYPIgCxl_WH6uuEFkN7L1vNLAMy7FUTkLQvUuuavpKw5b672YZ3xUwRvNXdcK4rq0.En9PBekzNTN891vV5YgiIn4iFV_SR-k_IGbPGQ0Hd-8&dib_tag=se&keywords=tv%2Bin%2Bofferta&qid=1755981875&sprefix=tv%2Bin%2Bo%2Caps%2C162&sr=8-6&th=1" target="_blank" class="button button-1">Scopri di più</a>
+          <a href="https://www.amazon.it/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fcheckout%2Fentry%2Fbuynow%3FclientName%3DOffersX_OfferDisplay_DetailPage%26ASIN%3DB0CZXPGPFV%26storeID%3D%26qid%3D1755981875%26anti-csrftoken-a2z%3DhHMgi03pIfew6i04kRyLHOqn4vGTbRg%252BlSut5KJwFs8wAAAAAGiqKQo3ZDJiMzdmYy1kZjAzLTQ2ZmQtOTE4My0wOWJmNzFiMDU2ZGE%253D%26sellingCustomerID%3D%26sourceCustomerOrgListID%3D%26dropdown-selection-ubb%3Dadd-new%26viewID%3Dglance%26ctaDeviceType%3Ddesktop%26isAddon%3D0%26ref_%3Ddp_start-bbf_1_glance_chw%26dropdown-selection%3Dadd-new%26nodeID%3D%26items%255B0.base%255D%255Bquantity%255D%3D1%26sr%3D8-6%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BdisplayString%255D%3D149%252C00%2526nbsp%253B%2526euro%253B%26tagActionCode%3D%26usePrimeHandler%3D0%26ctaPageType%3Ddetail%26quantity%3D1%26smokeTestEnabled%3Dfalse%26rsid%3D258-2891882-3573562%26isBuyNow%3D1%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255Bamount%255D%3D149.0%26pageLoadTimestampUTC%3D2025-08-23T20%253A48%253A10.000591777Z%26isEligibilityLogicDisabled%3D1%26items%255B0.base%255D%255Basin%255D%3DB0CZXPGPFV%26referrer%3Ddetail%26isMerchantExclusive%3D0%26merchantID%3DA11IL2PNWYJU7H%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BcurrencyCode%255D%3DEUR%26items%255B0.base%255D%255BofferListingId%255D%3Dx%25252FSgx6oNrhYctFNi40kasBYDpFBwYVRQNDGPu1DcBR0ZXjpJA9E2J0ncMI2gZkyjdwr98GZOLKBTkGTAcSAYizFIAJwQI9pGMNzzRYe2Izp4yTajNSBAuouEDlVeBdV%25252Be91CxHm0B3FmiW72K3kHNg%25253D%25253D%26sourceCustomerOrgListItemID%3D%26submit.buy-now%3DInvia%26pipelineType%3DChewbacca%26rebateId%3D%26offerListingID%3Dx%25252FSgx6oNrhYctFNi40kasBYDpFBwYVRQNDGPu1DcBR0ZXjpJA9E2J0ncMI2gZkyjdwr98GZOLKBTkGTAcSAYizFIAJwQI9pGMNzzRYe2Izp4yTajNSBAuouEDlVeBdV%25252Be91CxHm0B3FmiW72K3kHNg%25253D%25253D%26session-id%3D258-2891882-3573562%26wlPopCommand%3D%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_it&openid.mode=checkid_setup&language=it_IT&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank" class="button button-2">Compra</a>
+         </div>
+    </div>
+    <div class="container">
+        <img src="https://m.media-amazon.com/images/I/71hwhYM7DiL._AC_SL1500_.jpg">
+        <div class="title">Cassa Bluetooth</div>
+        <div class="sottotittle">Suono incredibile e ottime prestazioni</div>
+         <div class="Bigbutton">
+          <a href="https://www.amazon.it/JBL-Essential-Bluetooth-Altoparlante-Impermeabile/dp/B0B3XX8P9C/ref=sr_1_7?crid=RJJ9XGM9BVCO&dib=eyJ2IjoiMSJ9.xy3Fmj3OvJZw06a8VapsM6QnWkOUB6bcJKpeSGfq10JfQfHucpzogQz5slALosDEIoHeSTdTm-5cSPNcy2m4RlodR9S0iwj7x-4QrKELHgGtCsSjOrJdu2mppVqNnc3sRLvjNYmyP2IAMwVlC7cnRvxUTubeGocJ00mA_TREYG6rYAUIM_tCuTmseThP3oxhzg3PM1z2gu2urGgNQ8E9N6tDUpv8DAcjFf1umrQ0ruw-UzWLDP-qhnyFpALuZyd2_wRQ6pNALDI9QYxHw5F43dSyJx7d9sbN9HvCUs8UVyQ.OKWW7PNRIrDcfDG4gdcAVkW-y4Mbs_94ZqkplbLSUS4&dib_tag=se&keywords=cassa%2Bbluetooth&qid=1755984301&sprefix=ca%2Caps%2C174&sr=8-7&th=1" target="_blank" class="button button-1">Scopri di più</a>
+          <a href="https://www.amazon.it/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fcheckout%2Fentry%2Fbuynow%3FclientName%3DOffersX_OfferDisplay_DetailPage%26ASIN%3DB0B3XX8P9C%26storeID%3D%26qid%3D1755984301%26anti-csrftoken-a2z%3DhLYjiLOXcekwBHH4bXn2u3i8VJkAbQifGBrnzwbyAjBhAAAAAGiqMc83ZDJiMzdmYy1kZjAzLTQ2ZmQtOTE4My0wOWJmNzFiMDU2ZGE%253D%26sellingCustomerID%3D%26sourceCustomerOrgListID%3D%26dropdown-selection-ubb%3Dadd-new%26viewID%3Dglance%26ctaDeviceType%3Ddesktop%26isAddon%3D0%26ref_%3Ddp_start-bbf_1_glance_chw%26dropdown-selection%3Dadd-new%26nodeID%3D%26items%255B0.base%255D%255Bquantity%255D%3D1%26sr%3D8-7%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BdisplayString%255D%3D79%252C00%2526nbsp%253B%2526euro%253B%26tagActionCode%3D%26usePrimeHandler%3D0%26ctaPageType%3Ddetail%26quantity%3D1%26smokeTestEnabled%3Dfalse%26rsid%3D258-2891882-3573562%26isBuyNow%3D1%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255Bamount%255D%3D79.0%26pageLoadTimestampUTC%3D2025-08-23T21%253A25%253A35.406550007Z%26isEligibilityLogicDisabled%3D1%26items%255B0.base%255D%255Basin%255D%3DB0B3XX8P9C%26referrer%3Ddetail%26isMerchantExclusive%3D0%26merchantID%3DA11IL2PNWYJU7H%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BcurrencyCode%255D%3DEUR%26items%255B0.base%255D%255BofferListingId%255D%3DEJIxqCuFdpB72gCITi3OuZKS0FJ7rbYpRrIgVC2zo5Ii3Y4NGjtj4%25252FiMgvEzOwQj17IL26DXnWlfEj5HVGG0KuQduuHpTVDocNAxGuxu9qWWcsdBFOHPw25%25252B9OdRLvUoQN%25252FFAVDYzAlFH98%25252FJnzL%25252BA%25253D%25253D%26sourceCustomerOrgListItemID%3D%26submit.buy-now%3DInvia%26pipelineType%3DChewbacca%26rebateId%3D%26offerListingID%3DEJIxqCuFdpB72gCITi3OuZKS0FJ7rbYpRrIgVC2zo5Ii3Y4NGjtj4%25252FiMgvEzOwQj17IL26DXnWlfEj5HVGG0KuQduuHpTVDocNAxGuxu9qWWcsdBFOHPw25%25252B9OdRLvUoQN%25252FFAVDYzAlFH98%25252FJnzL%25252BA%25253D%25253D%26session-id%3D258-2891882-3573562%26wlPopCommand%3D%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_it&openid.mode=checkid_setup&language=it_IT&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank" class="button button-2">Compra</a>
+         </div>
+    </div>
+    <div class="container"> 
+        <img src="https://m.media-amazon.com/images/I/613IRfbQ33L._AC_SL1500_.jpg">
+        <div class="title">PowerBank Solare</div>
+        <div class="sottotittle">Con la carica a portata di raggi UV</div>
+         <div class="Bigbutton">
+          <a href="https://www.amazon.it/Vikeri-Powerbank-Impermeabile-Smartphone-Arancione/dp/B0FFB5JM4L/ref=sr_1_20?crid=1SF94XRIAWBFP&dib=eyJ2IjoiMSJ9.BqhCvXyPDA9PSOFOhgOuq9fqYt8iorYMv3QZRhOPVcaslEhxZOul-vdkd_uj2FbT-_5uY2eZZ57Ne9PGSfGHRUavTP7r4oyCjfidtWcHAiI43BU8TGQnfWRWoxbpxCb7vr5F897xSECjHEEcyMUZOxBF8xzmq5k7mknW2hbu-tOp_LnZOr3NUhOjDjxzhTOFkq08HlW_v8X5U-be2N2sMvTrNh3OcfCyaCwtzr2_MGtkOJd74WtBh177uj3CC-E4lR_EgHa6xDRYYJq7eQmXwEQnOQp41HVmO3f16sKPuCQ.OPMuX-ypaXNm9aqS7ec9mUa3-4FMwPHpPoAue2nnMdo&dib_tag=se&keywords=pannelli%2Bsolari%2Bportatili&qid=1755983888&sprefix=pannelli%2Bsolari%2Caps%2C217&sr=8-20&th=1" target="_blank" class="button button-1">Scopri di più</a>
+          <a href="https://www.amazon.it/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.it%2Fcheckout%2Fentry%2Fbuynow%3FclientName%3DOffersX_OfferDisplay_DetailPage%26ASIN%3DB0FFB5JM4L%26storeID%3D%26qid%3D1755983888%26anti-csrftoken-a2z%3DhLDp0evAhTjESWSfRjxM8zVK361g3hHF%252B6CVwpys%252B2pAAAAAAGiqMLs3ZDJiMzdmYy1kZjAzLTQ2ZmQtOTE4My0wOWJmNzFiMDU2ZGE%253D%26sellingCustomerID%3D%26sourceCustomerOrgListID%3D%26viewID%3Dglance%26ctaDeviceType%3Ddesktop%26isAddon%3D0%26ref_%3Ddp_start-bbf_1_glance_chw%26nodeID%3D%26items%255B0.base%255D%255Bquantity%255D%3D1%26sr%3D8-20%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BdisplayString%255D%3D35%252C29%2526nbsp%253B%2526euro%253B%26tagActionCode%3D%26usePrimeHandler%3D0%26ctaPageType%3Ddetail%26quantity%3D1%26smokeTestEnabled%3Dfalse%26rsid%3D258-2891882-3573562%26isBuyNow%3D1%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255Bamount%255D%3D35.29%26pageLoadTimestampUTC%3D2025-08-23T21%253A20%253A59.071779655Z%26isEligibilityLogicDisabled%3D1%26items%255B0.base%255D%255Basin%255D%3DB0FFB5JM4L%26referrer%3Ddetail%26isMerchantExclusive%3D0%26merchantID%3DA10OGZHSPT242Y%26items%255B0.base%255D%255BcustomerVisiblePrice%255D%255BcurrencyCode%255D%3DEUR%26items%255B0.base%255D%255BofferListingId%255D%3DV5%25252BUIm22TCZBuATwGQmPhJ9bkMV76tR0xyyOZK%25252Fr6ieMWKRThgw%25252BsX98w%25252FcI72IiZ9rAsJgaQ8mMgELpi1T2da31PtwJCiV%25252FKAMT955TvKtmpSHPC4FRYtlCJDbwZUqjW%25252Fhbxx%25252FDTPtTQvBCYmdHACxxHrpWLG3N%25252B6fC9WYThuFTD0grbW4lPk7t6zx4danS%26sourceCustomerOrgListItemID%3D%26submit.buy-now%3DInvia%26pipelineType%3DChewbacca%26rebateId%3D%26offerListingID%3DV5%25252BUIm22TCZBuATwGQmPhJ9bkMV76tR0xyyOZK%25252Fr6ieMWKRThgw%25252BsX98w%25252FcI72IiZ9rAsJgaQ8mMgELpi1T2da31PtwJCiV%25252FKAMT955TvKtmpSHPC4FRYtlCJDbwZUqjW%25252Fhbxx%25252FDTPtTQvBCYmdHACxxHrpWLG3N%25252B6fC9WYThuFTD0grbW4lPk7t6zx4danS%26session-id%3D258-2891882-3573562%26wlPopCommand%3D%26isUnrec%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amazon_checkout_it&openid.mode=checkid_setup&language=it_IT&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank" class="button button-2">Compra</a>
+         </div>
+    </div>
+  </div>
+</body>
+</html>
