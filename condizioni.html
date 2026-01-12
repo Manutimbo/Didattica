@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cityfar</title>
+</head>
+<body>
+    <h1>Scorpi il CAP delle città </h1>
+    <label>Inserisci il nome della città</label>
+    <input type="text" id="cap">
+    <input type="submit" onclick="tracciamento()">
+    
+    <p id="wr"></p>
+
+    <script>
+function tracciamento(){
+
+    var città = (cap.value);
+ switch (città) {
+
+     case "Milano":
+     wr.innerHTML = "il cap di Milano è 20100";
+    break;
+
+    case "Roma" : 
+     wr.innerHTML = "il cap di Roma è 00100";
+    break;
+
+    case "Firenze" : 
+    wr.innerHTML = "il cap di Firenze è 50100";
+    break;
+
+    case "Venezia" : 
+    wr.innerHTML = "il cap di Venezia è 30100";
+    break;
+
+     default:
+     wr.innerHTML ="non credo sia una città";
+    break;
+}
+}
+    </script>
+</body>
+</html>
