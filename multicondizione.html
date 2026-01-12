@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Nostro Fast Food</title>
+<style>
+body { background-color: brown;
+       color: yellow;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titolo { text-align: center;
+          text-shadow: 2px 2px 5px orangered;
+}
+
+.box { background-color:goldenrod;
+       text-align: center;
+       border-radius: 50%;
+       width: 50%;
+       height: auto;
+       padding: 20px;
+       margin-left: 20%;
+}
+.button { background-color: cornflowerblue;
+          color: white;
+          padding: 5px;
+          border-radius: 20%;
+          border: none;
+}
+.button:hover { background-color: gray;
+                color: black;
+}
+#risultato { text-align: center;
+             font-family: fantasy;
+}
+
+
+</style>
+</head>
+<body>
+<h1 id="titolo">Prepara il tuo ordine</h1>
+<div class="box">
+  <label>Inserisci il tuo budget:</label>
+  <input type="number" id="tuobudget"><br><br>
+
+  <label>Burger:</label>
+  <select id="burger">
+    <option value="">Clicca qui</option>
+    <option value="1">Cheeseburger (€5)</option>
+    <option value="2">Big Mac (€7)</option>
+    <option value="3">Hamburger Classico (€4)</option>
+  </select><br><br>
+
+  <label>Drink:</label>
+  <select id="drink">
+    <option value="">Clicca qui</option>
+    <option value="1">Acqua (2€)</option>
+    <option value="2">Coca Cola (€3)</option>
+    <option value="3">Milkshake (€4)</option>
+</select><br><br>
+
+<input class="button" type="submit" onclick="calcolamenu()">
+
+</div>
+<p id="risultato"></p>
+
+
+<script>
+function calcolamenu() {
+    let varburger = burger.value;
+    let vardrink = drink.value;
+    let budget = Number(tuobudget.value);
+
+    let totale = 0;
+    let nomeburger = "";
+    let nomedrink = "";
+
+switch(varburger) {
+  case "1" :
+   totale += 5;
+   nomeburger = "Cheeseburger";
+   break;
+
+  case "2" :
+    totale += 7;
+    nomeburger = "Big Mac";
+    break;
+
+  case "3" : 
+    totale += 4;
+    nomeburger = "Hamburger Classico";
+    break;
+
+}
+
+switch(vardrink) {
+  case "1" : 
+   totale += 2;
+   nomedrink = "Acqua";
+   break;
+
+  case "2" : 
+    totale += 3;
+    nomedrink = "Coca Cola";
+    break;
+
+  case "3" :
+    totale += 4;
+    nomedrink = "Milkshake";
+    break;
+
+}
+
+if ((budget >= totale)) {
+     risultato.innetHTML = "giusto";
+     risultato.style.color = "green";
+}
+else {
+       rislutato.innetHTML = "non hai un credito sufficiente";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+</body>
+</html>
