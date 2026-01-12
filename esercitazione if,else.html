@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Nostro Fast Food</title>
+<style>
+body { background-color: brown;
+       color: yellow;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titolo { text-align: center;
+          text-shadow: 2px 2px 5px orangered;
+}
+
+.box { background-color:goldenrod;
+       text-align: center;
+       border-radius: 50%;
+       width: 50%;
+       height: auto;
+       padding: 20px;
+       margin-left: 20%;
+    }
+.button { background-color: cornflowerblue;
+          color: white;
+          padding: 5px;
+          border-radius: 20%;
+          border: none;
+}
+.button:hover { background-color: gray;
+                color: black;
+}
+#risultato { text-align: center;
+             font-family: fantasy;
+}
+.labelle { align-items: center;
+           display: flex;
+           flex-direction: column;
+}
+
+
+</style>
+</head>
+<body>
+<h1 id="titolo">Verifica se puoi preparare il tuo ordine</h1>
+
+<div class="box">
+  <div class="labelle">
+   <label>Inserisci il tuo budget</label>
+   <input type="text" id="tuobudget"><br><br>
+  </div>
+
+  <div class="labelle">
+   <label>Burger</label>
+   <input type="number" id="burger"><br><br>
+  </div>
+
+  <div class="labelle">
+   <label>Drink</label>
+   <input type="number" id="drink"><br><br>
+  </div>
+
+   <input class="button" type="submit" onclick="calcolaordine()">
+</div>
+
+<p id="risultato"></p>
+
+<script>
+function calcolaordine() {
+
+    let varburger = burger.value;
+    let vardrink = drink.value;
+    let budget = Number(tuobudget.value);
+
+    if ((varburger >0)||(vardrink >0)) { 
+
+
+
+        if ((budget >=5) && (budget <30)) {
+            risultato.innerHTML = "Ordine Confermato";
+            risultato.style.color = "black";
+        }
+
+        else { 
+            risultato.innerHTML = "Ordina qualcos'altro";
+            risultato.style.color = "green";
+        }
+    }
+    else {
+        risultato.innerHTML = "Nessun ordine nel carrello";
+        risultato.style.color = "violet";
+    }
+}
+
+
+</script>
+</body>
+</html>
